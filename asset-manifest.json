@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/kitapp-task/static/css/main.bfacde20.css",
+    "main.js": "/kitapp-task/static/js/main.d1a7daae.js",
+    "index.html": "/kitapp-task/index.html",
+    "main.bfacde20.css.map": "/kitapp-task/static/css/main.bfacde20.css.map",
+    "main.d1a7daae.js.map": "/kitapp-task/static/js/main.d1a7daae.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bfacde20.css",
+    "static/js/main.d1a7daae.js"
+  ]
+}
