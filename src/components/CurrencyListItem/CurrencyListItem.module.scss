@@ -1,0 +1,43 @@
+.currencyListItem {
+   display: flex;
+   padding: 20px 70px;
+   justify-content: space-between;
+   font-size: 1.25rem;
+   color: #141e37;
+   align-items: center;
+
+   &:hover {
+      background-color: rgb(246, 246, 246);
+   }
+
+   .name {
+      width: 350px;
+      display: grid;
+      grid-template-columns: 55px 15px 1fr;
+      gap: 10px;
+      color: #141e37;
+
+      .symbols {
+         color: inherit;
+
+         text-align: right;
+         text-transform: uppercase;
+      }
+
+      .divider {
+         color: inherit;
+         text-align: center;
+      }
+
+      .fullName {
+         color: inherit;
+      }
+   }
+
+   .amount {
+      span {
+         text-transform: uppercase;
+         margin-left: 10px;
+      }
+   }
+}

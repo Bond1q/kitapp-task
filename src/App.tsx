@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route, Navigate } from 'react-router-dom'
+import Layout from './components/Layout/Layout'
+import ConverterPage from './pages/ConverterPage/ConverterPage'
+import CurrenciesListPage from './pages/CurrenciesListPage/CurrenciesListPage'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+   return (
+      <div className='App'>
+         <Routes>
+            <Route path='/' element={<Layout />}>
+               <Route path='/' element={<Navigate to='/converter' replace />} />
+               <Route path='/converter' element={<ConverterPage />} />
+               <Route path='/list' element={<CurrenciesListPage />}>
+                  <Route path=':cur' element={<CurrenciesListPage />} />
+               </Route>
+            </Route>
+         </Routes>
+      </div>
+   )
 }
 
-export default App;
+export default App

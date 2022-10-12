@@ -1,0 +1,25 @@
+.convertedCurrency {
+   padding: 0px 30px 30px 30px;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   font-size: 1.5rem;
+   text-transform: uppercase;
+   font-weight: 500;
+
+   color: #1c94ef;
+
+   .currency {
+      span {
+         color: #141e37;
+      }
+   }
+
+   .divider {
+      margin: 0 20px;
+   }
+
+   .symbols {
+      margin-left: 10px;
+   }
+}
