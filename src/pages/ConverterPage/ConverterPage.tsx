@@ -30,9 +30,14 @@ const ConverterPage = () => {
 		const index = currenciesRates.findIndex((el) => el.currency === currency)
 		return currenciesRates[index]?.rate * amount || 1
 	}
+	const convertedCurrency = getConvertedCurrency(searchParams.get('to')!, +searchParams.get('amount')!)
 	const dispatch = useAppDispatch()
 	useEffect(() => {
 		dispatch(getCurrenciesSymbols())
+		const activeCurrency = searchParams.get('from')
+		activeCurrency && dispatch(getCurrencyRate(activeCurrency))
+
+
 	}, [dispatch])
 	return (
 		<div>
@@ -47,10 +52,7 @@ const ConverterPage = () => {
 				<ConvertedCurrency
 					currencyFrom={searchParams.get('from')!}
 					currencyFromAmount={+searchParams.get('amount')!}
-					currencyToAmount={getConvertedCurrency(
-						searchParams.get('to')!,
-						+searchParams.get('amount')!,
-					)}
+					currencyToAmount={convertedCurrency}
 					currencyTo={searchParams.get('to')!}
 				/>
 			)}
