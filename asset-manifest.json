@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/kitapp-task/static/css/main.bfacde20.css",
-    "main.js": "/kitapp-task/static/js/main.4357ca87.js",
+    "main.js": "/kitapp-task/static/js/main.bc3eaad9.js",
     "index.html": "/kitapp-task/index.html",
     "main.bfacde20.css.map": "/kitapp-task/static/css/main.bfacde20.css.map",
-    "main.4357ca87.js.map": "/kitapp-task/static/js/main.4357ca87.js.map"
+    "main.bc3eaad9.js.map": "/kitapp-task/static/js/main.bc3eaad9.js.map"
   },
   "entrypoints": [
     "static/css/main.bfacde20.css",
-    "static/js/main.4357ca87.js"
+    "static/js/main.bc3eaad9.js"
   ]
 }
